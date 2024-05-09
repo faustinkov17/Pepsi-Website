@@ -84,7 +84,7 @@ const pepsi = [
         protein_per: "0%",
         ml: "1.5 LTR",
         poster1: "img/5 Pepsi white.png",
-        poster2: "img/5 Pepsi blue-png",
+        poster2: "img/5 Pepsi blue.png",
         main_poster: "img/pepsi 1.51tr-png"
     },
     {
@@ -101,7 +101,7 @@ const pepsi = [
         protein_per: "0%",
         ml: "2 LTR",
         poster1: "img/6 Pepsi white.png",
-        poster2: "img/6 Pepsi blue-png",
+        poster2: "img/6 Pepsi blue.png",
         main_poster: "img/pepsi 21tr-png"
     },
 ]
@@ -110,5 +110,7 @@ Array.from(document.getElementsByClassName('card_pepsi')).forEach((ele,i)=>{
     ele.addEventListener('mouseover', ()=> {
          document.getElementsByClassName('pepsi_hover_img')[i].src= pepsi[i].poster1;
     })
- 
+    ele.addEventListener('mouseout', ()=> {
+        document.getElementsByClassName('pepsi_hover_img')[i].src= pepsi[i].poster2;
+   })
 })
