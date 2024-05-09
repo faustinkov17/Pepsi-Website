@@ -48,27 +48,11 @@ const pepsi = [
         protein: "0g",
         protein_per: "0%",
         ml: "500 ml",
-        poster1: "img/3 Pepsi white-png",
+        poster1: "img/3 Pepsi white.png",
         poster2: "img/3 Pepsi blue.png",
         main_poster: "img/pepsi .5ltr.png"
     },
-    {
-        name: "Pepsi Diet",
-        amount: "350 cl",
-        amount_per: "8.6%",
-        fat: "0g",
-        fat_per: "0%",
-        sodium: "310mg",
-        sodium_per: "1%",
-        carbohytred: "48",
-        carbohytred_per: "15.3%",
-        protein: "0g",
-        protein_per: "0%",
-        ml: "250ml",
-        poster1: "img/1 Pespi white.png",
-        poster2: "img/1 Pespi blue.png",
-        main_poster: "img/pepsi 11tr-png",
-    },
+    
     {
         name: "Pepsi 1 LTR",
         amount: "510 cl",
@@ -86,6 +70,45 @@ const pepsi = [
         poster2: "img/4 Pepsi blue.png",
         main_poster: "img/pepsi diet.png",
     },
+    {
+        name: "Pepsi 1.5 LTR",
+        amount: "625 cl",
+        amount_per: "19.4%",
+        fat: "0g",
+        fat_per: "0%",
+        sodium: "50mg",
+        sodium_per: "3%",
+        carbohytred: "66g",
+        carbohytred_per: "30.8%",
+        protein: "0g",
+        protein_per: "0%",
+        ml: "1.5 LTR",
+        poster1: "img/5 Pepsi white.png",
+        poster2: "img/5 Pepsi blue-png",
+        main_poster: "img/pepsi 1.51tr-png"
+    },
+    {
+        name: "Pepsi 2 LTR",
+        amount: "729 cl",
+        amount_per: "37.2%",
+        fat: "0g",
+        fat_per: "0%",
+        sodium: "60mg",
+        sodium_per: "4%",
+        carbohytred: "69g",
+        carbohytred_per: "33.2%",
+        protein: "0g",
+        protein_per: "0%",
+        ml: "2 LTR",
+        poster1: "img/6 Pepsi white.png",
+        poster2: "img/6 Pepsi blue-png",
+        main_poster: "img/pepsi 21tr-png"
+    },
 ]
 
-Array.from(document.getElementsByClassName)
+Array.from(document.getElementsByClassName('card_pepsi')).forEach((ele,i)=>{
+    ele.addEventListener('mouseover', ()=> {
+         document.getElementsByClassName('pepsi_hover_img')[i].src= pepsi[i].poster1;
+    })
+ 
+})
