@@ -208,6 +208,20 @@ header section .right_box .right_btn_box {
     display: flex;
     align-items: center;
 }
+header section .right_box .right_btn_box span {
+    font-size: .5rem;
+    font-weight: 600;
+    color: rgb(255,255,255, .5);
+    margin-right: .4375rem;
+}
+header section .right_box .right_btn_box .bi {
+    font-size: .75rem;
+    cursor: var(--cursor);
+    transition: .3s linear;
+}
+header section .right_box .right_btn_box .bi:hover {
+    color: #2d71c0;
+}
 header section .right_box img  {
     width: 26.875rem;
     margin: 1.25rem 0 0 -11.25rem;
