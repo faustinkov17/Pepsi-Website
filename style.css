@@ -415,4 +415,9 @@ header .ml_bx h5 {
     header section .left_box {
         padding: 0rem;
     }
+    @media screen and (max-width:380px){
+        header .ml_bx p, h5, h6 {
+            display: none;
+        }
+    }
 }
