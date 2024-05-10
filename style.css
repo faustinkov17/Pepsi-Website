@@ -209,7 +209,7 @@ header section .left_box .item_bx .card_pepsi h6 {
     text-align: center;
     color: #2c6cbb;
 }
-header section .left_box .item_bx .card:hover h6 {
+header section .left_box .item_bx .card_pepsi:hover h6 {
     color: #fff;
 }
 header section .right_box .right_btn_box {
