@@ -85,7 +85,7 @@ const pepsi = [
         ml: "1.5 LTR",
         poster1: "img/5 Pepsi white.png",
         poster2: "img/5 Pepsi blue.png",
-        main_poster: "img/pepsi 1.51tr-png"
+        main_poster: "img/pepsi 1.5ltr.png"
     },
     {
         name: "Pepsi 2 LTR",
@@ -102,7 +102,7 @@ const pepsi = [
         ml: "2 LTR",
         poster1: "img/6 Pepsi white.png",
         poster2: "img/6 Pepsi blue.png",
-        main_poster: "img/pepsi 21tr-png"
+        main_poster: "img/pepsi 2ltr.png"
     },
 ]
 
@@ -116,5 +116,19 @@ Array.from(document.getElementsByClassName('card_pepsi')).forEach((ele,i)=>{
 })
 
 Array.from(document.getElementsByClassName('card_pepsi')).forEach((ele,i)=>{
-    
+    ele.addEventListener('click', ()=>{
+        document.getElementById('Main_Bottle').src = pepsi[i].main_poster;
+        document.getElementById('main_title').innerHTML= pepsi[i].name;
+        document.getElementById('ml_title').innerHTML= pepsi[i].ml;
+        document.getElementById('cl').innerHTML= pepsi[i].amount;
+        document.getElementById('cl1').innerHTML= pepsi[i].amount_per;
+        document.getElementById('fat').innerHTML= pepsi[i].fat;
+        document.getElementById('fat1').innerHTML= pepsi[i].fat_per;
+        document.getElementById('sodium').innerHTML= pepsi[i].sodium;
+        document.getElementById('sodium1').innerHTML= pepsi[i].sodium_per;
+        document.getElementById('carbohydrated').innerHTML= pepsi[i].carbohytred;
+        document.getElementById('carbohydrated1').innerHTML= pepsi[i].carbohytred_per;
+        document.getElementById('protein').innerHTML= pepsi[i].protein;
+        document.getElementById('protein1').innerHTML= pepsi[i].protein_per;
+    })
 })
