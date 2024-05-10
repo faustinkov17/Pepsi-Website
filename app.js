@@ -116,10 +116,5 @@ Array.from(document.getElementsByClassName('card_pepsi')).forEach((ele,i)=>{
 })
 
 Array.from(document.getElementsByClassName('card_pepsi')).forEach((ele,i)=>{
-    ele.addEventListener('mouseover', ()=> {
-         document.getElementsByClassName('pepsi_hover_img')[i].src= pepsi[i].poster1;
-    })
-    ele.addEventListener('mouseout', ()=> {
-        document.getElementsByClassName('pepsi_hover_img')[i].src= pepsi[i].poster2;
-   })
+    
 })
